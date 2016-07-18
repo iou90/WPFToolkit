@@ -1,0 +1,5 @@
+C:\iou90\work\wpf\MVVMFoundation\Kant.Wpf.MvvmFoundation\Kant.Wpf.MvvmFoundation\bin\Debug\Kant.Wpf.MvvmFoundation.dll
+C:\iou90\work\wpf\MVVMFoundation\Kant.Wpf.MvvmFoundation\Kant.Wpf.MvvmFoundation\bin\Debug\Kant.Wpf.MvvmFoundation.pdb
+C:\iou90\work\wpf\MVVMFoundation\Kant.Wpf.MvvmFoundation\Kant.Wpf.MvvmFoundation\obj\Debug\Kant.Wpf.MvvmFoundation.csprojResolveAssemblyReference.cache
+C:\iou90\work\wpf\MVVMFoundation\Kant.Wpf.MvvmFoundation\Kant.Wpf.MvvmFoundation\obj\Debug\Kant.Wpf.MvvmFoundation.dll
+C:\iou90\work\wpf\MVVMFoundation\Kant.Wpf.MvvmFoundation\Kant.Wpf.MvvmFoundation\obj\Debug\Kant.Wpf.MvvmFoundation.pdb
