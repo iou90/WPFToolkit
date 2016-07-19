@@ -10,11 +10,16 @@ namespace Kant.Wpf.Toolkit
 {
     public static class MeasureHepler
     {
-        public static Size MeasureString(TextInformation information, CultureInfo culture)
+        public static Size MeasureString(TextInfo info, CultureInfo culture)
         {
-            var formattedText = new FormattedText(information.Text, culture, information.FlowDirection, information.Typeface, information.FontSize, information.Foreground);
+            if(info == null)
+            {
+                throw new ArgumentNullException("information");
+            }
 
-            return new Size(formattedText.Width, formattedText.Height);
+            var formattedText = new FormattedText(info.Text, culture, info.FlowDirection, info.Typeface, info.FontSize, info.Foreground);
+
+            return new Size(formattedText.Width + info.Margin.Left + info.Margin.Right, formattedText.Height + info.Margin.Top + info.Margin.Bottom);
         }
 
         public static Size MeasureString(string text, Style style, CultureInfo culture)
@@ -30,6 +35,7 @@ namespace Kant.Wpf.Toolkit
             var fontStyle = FontStyles.Normal;
             var fontWeight = FontWeights.Regular;
             var fontStretch = FontStretches.Normal;
+            var margin = new Thickness(0);
             Brush foregroud = new SolidColorBrush(Colors.Black);
 
             foreach (var s in style.Setters)
@@ -66,6 +72,10 @@ namespace Kant.Wpf.Toolkit
                         foregroud = (Brush)setter.Value;
 
                         break;
+                    case "Margin":
+                        margin = (Thickness)setter.Value;
+
+                        break;
                     default:
                         break;
                 }
@@ -73,7 +83,7 @@ namespace Kant.Wpf.Toolkit
 
             var formattedText = new FormattedText(text, culture, flowDirection, new Typeface(fontFamily, fontStyle, fontWeight, fontStretch), fontSize, foregroud);
 
-            return new Size(formattedText.Width, formattedText.Height);
+            return new Size(formattedText.Width + margin.Left + margin.Right, formattedText.Height + margin.Top + margin.Bottom);
         }
     }
 }

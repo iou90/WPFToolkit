@@ -7,9 +7,9 @@ using System.Windows.Media;
 
 namespace Kant.Wpf.Toolkit
 {
-    public class TextInformation
+    public class TextInfo
     {
-        public TextInformation()
+        public TextInfo()
         {
         }
 
@@ -22,5 +22,7 @@ namespace Kant.Wpf.Toolkit
         public double FontSize { get; set; }
 
         public Brush Foreground { get; set; }
+
+        public Thickness Margin { get; set; }
     }
 }
