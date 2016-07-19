@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kant.Wpf.Toolkit", "Kant.Wpf.MvvmFoundation\Kant.Wpf.Toolkit.csproj", "{CD69BB9B-53BD-4C29-90B1-0EEDD5C600C5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Kant.Wpf.Toolkit", "Kant.Wpf.Toolkit\Kant.Wpf.Toolkit.csproj", "{CD69BB9B-53BD-4C29-90B1-0EEDD5C600C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
