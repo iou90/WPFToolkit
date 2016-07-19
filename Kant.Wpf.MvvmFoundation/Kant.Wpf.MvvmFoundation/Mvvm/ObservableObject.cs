@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kant.Wpf.MvvmFoundation
+namespace Kant.Wpf.Toolkit.Mvvm
 {
     public abstract class ObservableObject : INotifyPropertyChanged
     {

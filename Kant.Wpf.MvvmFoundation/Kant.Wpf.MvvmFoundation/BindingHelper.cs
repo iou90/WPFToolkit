@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Data;
 
-namespace Kant.Wpf.MvvmFoundation
+namespace Kant.Wpf.Toolkit
 {
     public static class BindingHelper
     {

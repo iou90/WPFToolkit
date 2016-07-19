@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace Kant.Wpf.MvvmFoundation
+namespace Kant.Wpf.Toolkit.Mvvm
 {
     public class RelayCommand<T> : RelayCommand
     {
